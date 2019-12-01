@@ -21,7 +21,7 @@
     <script>
     var insert_tweet_button = function(){
       var id = document.getElementById("insert");
-      id.insertAdjacentHTML("beforeend","<div class='twitter'><a href='//twitter.com/share' class='twitter-share-button' data-text="+text+" data-url='' data-lang='ja'>Tweet</a></div>");
+      id.insertAdjacentHTML("beforeend","<div class='twitter'><a href='//twitter.com/share' class='twitter-share-button' data-text="+document.write(text)+" data-url='' data-lang='ja'>Tweet</a></div>");
 
       //var twitter_id = document.getElementById("twitter_insert");
       //twitter_id.insertAdjacentHTML("afterbegin","<a href='//twitter.com/share' class='twitter-share-button' data-text='test' ''data-url='' data-lang='ja'>Tweet</a>");
