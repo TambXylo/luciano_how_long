@@ -1,1 +1,1 @@
-var test = "Hello JavaScript:D";
+var month = "3";
