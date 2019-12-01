@@ -1,1 +1,1 @@
-alert("Hello JavaScript:D");
+var test = "Hello JavaScript:D";
