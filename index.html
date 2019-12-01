@@ -18,17 +18,12 @@
       </a>
     </div>
 
-    <script>
-    var insert_tweet_button = function(){
-      var id = document.getElementById("insert");
-      id.insertAdjacentHTML("beforeend","<div class='twitter'><a href='//twitter.com/share' class='twitter-share-button' data-text="+document.write(duration_month)+" data-url='' data-lang='ja'>Tweet</a></div>");
+    <script type="text/javascript">
+    (function(){
+      var url = encodeURIComponent( document.location );
+      var text = "3";
+      document.write('<a href="https://twitter.com/share?url=' + url + '&text=' + text + '&count=none&lang=ja"><img src="/imgs/tsubu.jpg" /></a>')
+    })
 
-      //var twitter_id = document.getElementById("twitter_insert");
-      //twitter_id.insertAdjacentHTML("afterbegin","<a href='//twitter.com/share' class='twitter-share-button' data-text='test' ''data-url='' data-lang='ja'>Tweet</a>");
-    }
-    </script>
-    <!--
-    <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a>
-    -- >
   </body>
 </html>
