@@ -5,26 +5,26 @@
     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
   </head>
 
-  <body>
-    <p>まだa
+  <body id = insert>
+    <p>まだ
     <script>
     document.write(duration_month);
     </script>
     ヶ月！？</p>
 
     <div class="twitter" id="twitter_insert">
-      <!--
       <a href="//twitter.com/share" class="twitter-share-button" data-text="+text+" data-url="" data-lang="ja">
         Tweet
       </a>
-      -- >
     </div>
 
     <script>
     var insert_tweet_button = function(){
-      var twitter_id = document.getElementById("twitter_insert");
+      var id = document.getElementById("insert");
+      id.insertAdjacentHTML("beforeend","<div class='twitter'><a href='//twitter.com/share' class='twitter-share-button' data-text="+text+" data-url='' data-lang='ja'>Tweet</a></div>");
 
-      twitter_id.insertAdjacentHTML("afterbegin","<a href='//twitter.com/share' class='twitter-share-button' data-text='test' ''data-url='' data-lang='ja'>Tweet</a>");
+      //var twitter_id = document.getElementById("twitter_insert");
+      //twitter_id.insertAdjacentHTML("afterbegin","<a href='//twitter.com/share' class='twitter-share-button' data-text='test' ''data-url='' data-lang='ja'>Tweet</a>");
     }
     </script>
     <!--
