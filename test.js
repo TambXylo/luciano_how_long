@@ -11,13 +11,12 @@ const release_date = luciano_release.getDate();
 
 if(now_year == release_year){
   var duration_month = now_month - release_month;
-  var text = "まだ" + duration_month + "ヶ月！？";
 }else{
   var duration_month = "未実装です！"
 }
 
 function tweet_button(){
   var url = encodeURIComponent( document.location );
-  var text = "3";
-  document.write('<a href="https://twitter.com/share?url=' + url + '&text=' + text + '&count=none&lang=ja">Tweet</a>')
+  var text = "まだ" + duration_month + "ヶ月！？";
+  document.write('<a href="https://twitter.com/share?url=' + url + '&text=' + text + '&count=none&lang=ja" target="_blank">Tweet</a>')
 }
