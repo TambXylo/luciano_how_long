@@ -17,6 +17,6 @@ if(now_year == release_year){
 
 function tweet_button(){
   var url = encodeURIComponent( document.location );
-  var text = "まだ" + duration_month + "ヶ月！？";
+  var text = "界隈始まってまだ" + duration_month + "ヶ月！？";
   document.write('<a href="https://twitter.com/share?url=' + url + '&text=' + text + '&count=none&lang=ja" target="_blank">Tweet</a>')
 }
