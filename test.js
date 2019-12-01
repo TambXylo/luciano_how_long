@@ -15,3 +15,9 @@ if(now_year == release_year){
 }else{
   var duration_month = "未実装です！"
 }
+
+function tweet_button(){
+  var url = encodeURIComponent( document.location );
+  var text = "3";
+  document.write('<a href="https://twitter.com/share?url=' + url + '&text=' + text + '&count=none&lang=ja">Tweet</a>')
+}
