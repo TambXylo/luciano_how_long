@@ -10,7 +10,7 @@ const release_month = luciano_release.getMonth();
 const release_date = luciano_release.getDate();
 
 if(now_year == release_year){
-  var duration_month = now_date.getMonth() - luciano_release_date.getMonth();
+  var duration_month = now_month - release_month;
 }else{
   var duration_month = "未実装です！"
 }
