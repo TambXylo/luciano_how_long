@@ -11,6 +11,7 @@ const release_date = luciano_release.getDate();
 
 if(now_year == release_year){
   var duration_month = now_month - release_month;
+  var text = "まだ" + duration_month + "ヶ月！？";
 }else{
   var duration_month = "未実装です！"
 }
