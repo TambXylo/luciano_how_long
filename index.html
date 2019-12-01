@@ -12,7 +12,7 @@
     </script>
     ヶ月！？</p>
 
-    <div class="twitter">
+    <div class="twitter" id="twitter_insert">
       <!--
       <a href="//twitter.com/share" class="twitter-share-button" data-text="+text+" data-url="" data-lang="ja">
         Tweet
@@ -22,9 +22,9 @@
 
     <script>
     var insert_tweet_button = function(){
-      var twitter_id = document.getElementById("twitter");
+      var twitter_id = document.getElementById("twitter_insert");
 
-      twitter_id.insertAdjacentHTML("afterbegin","<a href='//twitter.com/share' class='twitter-share-button' data-text='' data-url='' data-lang='ja'>Tweet</a>");
+      twitter_id.insertAdjacentHTML("afterbegin","<a href='//twitter.com/share' class='twitter-share-button' data-text=" + text + "data-url='' data-lang='ja'>Tweet</a>");
     }
     </script>
     <!--
